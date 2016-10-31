@@ -35,13 +35,13 @@ namespace xadrez
                 mat[pos.linha, pos.coluna] = true;
             }
             // sudeste
-            pos.definirValores(posicao.linha - 1, posicao.coluna + 2);
+            pos.definirValores(posicao.linha - 1, posicao.coluna + 1);
             if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
             }
             // direita
-            pos.definirValores(posicao.linha, posicao.coluna + 2);
+            pos.definirValores(posicao.linha, posicao.coluna + 1);
             if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
